@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare let $: any;
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent implements OnInit, AfterViewInit {
 
   public imagesUrl;
 
@@ -19,6 +20,10 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() {
    
+  }
+  ngAfterViewInit() {
+    $('#slider').nivoSlider();
+    console.log('sdas');
   }
 
 }
