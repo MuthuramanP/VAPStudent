@@ -23,7 +23,7 @@ export class BannerComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit() {
     $('#slider').nivoSlider();
-    console.log('sdas');
+    //console.log('sdas');
   }
 
 }

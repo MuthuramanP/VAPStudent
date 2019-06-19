@@ -21,6 +21,10 @@ import { TwopageComponent } from './twopage/twopage.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './user/signup/signup.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { JobComponent } from './job/job.component';
+import { UnderconsComponent } from './undercons/undercons.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { SignupComponent } from './user/signup/signup.component';
     TwopageComponent,
     AboutusComponent,
     HomeComponent,
-    SignupComponent
+    SignupComponent,
+    BlogComponent,
+    ContactusComponent,
+    JobComponent,
+    UnderconsComponent
   ],
   imports: [
     BrowserModule,
