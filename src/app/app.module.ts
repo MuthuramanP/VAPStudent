@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { OwlModule } from 'ngx-owl-carousel';
 import { SliderModule } from 'angular-image-slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -55,7 +55,7 @@ import { UnderconsComponent } from './undercons/undercons.component';
     SliderModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
